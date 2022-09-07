@@ -25,7 +25,7 @@ public class ProductInformationApplication {
 		//Return a prepared Docket instance
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
-				.paths(PathSelectors.ant("/**"))
+				.paths(PathSelectors.any())
 				.apis(RequestHandlerSelectors.basePackage("com.pim.productinformation"))
 				.build()
 				.apiInfo(apiDetails());
