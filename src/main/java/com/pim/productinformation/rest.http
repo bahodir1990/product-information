@@ -1,0 +1,107 @@
+GET http://localhost:8080/api/products/1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/products/all
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/products/add/1
+Content-Type: application/json
+
+{
+  "name": "Sweater",
+  "description": "Premium sweater for men & women",
+  "attributes": [
+    {
+      "attributeId": 1,
+      "attributeName": "color",
+      "attributeValue": "blue"
+    },
+    {
+      "attributeId": 2,
+      "attributeName": "size",
+      "attributeValue": "S"
+    }
+  ],
+  "sku": "sku3",
+  "price": 875.00,
+  "unitsInStock": 500
+}
+
+###
+
+PUT http://localhost:8080/api/products/update/3
+Content-Type: application/json
+
+{
+  "name": "New Sneaker"
+}
+
+###
+
+DELETE http://localhost:8080/api/products/delete/3
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/categories/1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/categories/all
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/categories/add
+Content-Type: application/json
+
+{
+  "name": "Accessories",
+  "description": "Accessories for Women"
+}
+
+###
+
+PUT http://localhost:8080/api/categories/update/3
+Content-Type: application/json
+
+{
+  "name": "Luxury Accessories"
+}
+
+###
+
+DELETE http://localhost:8080/api/categories/delete/3
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/attributes/1
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/attributes/all
+Content-Type: application/json
+
+###
+
+POST http://localhost:8080/api/attributes/add/2
+Content-Type: application/json
+
+{
+  "name": "Shoe size",
+  "description": "Attribute refers to the size of shoes"
+}
+
+###
+
+DELETE http://localhost:8080/api/attributes/delete/3
+Content-Type: application/json
+
+###
